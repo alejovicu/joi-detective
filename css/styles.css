@@ -1,0 +1,19 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+header {
+  height: 10%;
+  width: 100%;
+}
+header section {
+  text-align: center;
+}
+header #contact {
+  border-bottom: 2px solid rgb(221, 217, 217);
+}
+header #contact div {
+  display: inline-block;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 0 1% 1%;
+}
