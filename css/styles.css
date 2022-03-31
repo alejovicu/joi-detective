@@ -1,28 +1,28 @@
 * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Arial Rounded MT', Courier, monospace;
 }
 
 .header { grid-area: header; }
-.menu-bar { grid-area: menu; }
+.page-content { grid-area: menu-bar;}
 .page-content { grid-area: nosotros;}
 .page-content { grid-area: empresarial;}
 .page-content { grid-area: judicial;}
 .page-content { grid-area: personal;}
-.item5 { grid-area: footer; }
+.footer { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header'
-    'menu'
+    'menu-bar'
     'nosotros'
     'empresarial'
     'judicial'
     'personal'
     'footer';
   gap: 10px;
-  background-color: #78797a;
-  color: black;
+  background-color: #104a6f;
+  color: #104a6f;
   padding: 10px;
 }
 
@@ -31,4 +31,32 @@
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.banner-image img{
+  max-width: 40%;
+  max-height: 40%;
+}
+
+.content-section{
+  border-radius: 5px;
+}
+
+.razones{
+  text-align: center;
+  font-size: 85%;
+  text-size-adjust: inherit;
+  width: auto;
+  background-color: rgb(165, 172, 172);
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 5px;
+}
+
+.razones ol li {
+  background: #e5efff86;
+  padding: 1%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  border-radius: 5px;
 }
