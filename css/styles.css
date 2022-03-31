@@ -1,19 +1,34 @@
 * {
   font-family: 'Courier New', Courier, monospace;
 }
-header {
-  height: 10%;
-  width: 100%;
+
+.header { grid-area: header; }
+.menu-bar { grid-area: menu; }
+.page-content { grid-area: nosotros;}
+.page-content { grid-area: empresarial;}
+.page-content { grid-area: judicial;}
+.page-content { grid-area: personal;}
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'menu'
+    'nosotros'
+    'empresarial'
+    'judicial'
+    'personal'
+    'footer';
+  gap: 10px;
+  background-color: #78797a;
+  color: black;
+  padding: 10px;
 }
-header section {
+
+.grid-container > div {
+  background-color: white;
   text-align: center;
-}
-header #contact {
-  border-bottom: 2px solid rgb(221, 217, 217);
-}
-header #contact div {
-  display: inline-block;
-  justify-content: space-between;
-  text-align: center;
-  margin: 0 0 1% 1%;
+  padding: 20px 0;
+  font-size: 30px;
 }
