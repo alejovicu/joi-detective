@@ -4,33 +4,31 @@
     <title>Infidelity Tracker IP</title>
   </head>
   <body>
+    <div class="menu-bar">
+      <a class="active" href="#home">Inicio</a>
+      <a href="#empresarial">Investigaciones Empresariales</a>
+      <a href="#judicial">Judicial</a>
+      <a href="#personal">Investigación Personal</a>
+    </div>
+
     <div class="grid-container">
-      <div class="header content-section">
-        <section id="contact">
+      <div class="header">
+        <div class="header-contact content-section contact-bar">
           <div>
-            <img src="img/cel.png" alt="">
-            310 405 2465
+            <img src="img/wa.png" alt="Whatsapp icon">
+            <a id="wa-link-header"
+              href="https://wa.me/573188314958"
+              target="_blank">318 831 4958</a>
           </div>
-          <div>
-            <img src="img/wa.png" alt="">
-            Whatsapp
-          </div>
-        </section>
-        <div class="banner-image">
-          <img alt="Investigadores Colombia" title="" src="img/banner-logo.jpeg">
+          <img class="banner-image" 
+            alt="Investigadores Colombia"
+            title=""
+            src="img/banner-logo.jpeg">
         </div>
         <div class="end-block"></div>
       </div>
 
-      <div class="menu-bar content-section">
-        <a class="active" href="#home">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#empresarial">Investigaciones Empresariales</a>
-        <a href="#judicial">Judicial</a>
-        <a href="#personal">Investigación Personal</a>
-      </div>
-
-      <div class="nosotros content-section">
+      <div id="home" class="nosotros content-section">
         <h1>Infidelity Tracker IP</h1>
         Somos una empresa legalmente constituida bajo los estándares de
         calidad y la ley colombiana con más de 20 años de experiencia en el
@@ -68,9 +66,15 @@
         <br>
         Nos comprometemos a garantizar la confidencialidad de todos nuestros
         trabajos, nuestros clientes tendrán la confianza en nuestro trabajo
+
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/573188314958" class="float" target="_blank">
+         <i class="fa fa-whatsapp my-float"></i>
+        </a>
       </div>
 
-      <div class="empresarial content-section">
+      <div id=empresarial class="empresarial content-section">
         <h1>Empresarial</h1>
         Tiene problemas o dudas sobre:
         <br>
@@ -127,7 +131,7 @@
         el cual usted le abre la puerta y comienza a brindar información.
       </div>
 
-      <div class="judicial content-section">
+      <div id="judicial" class="judicial content-section">
         <h1>Judicial</h1>
         Servicios:
         <br>
@@ -141,7 +145,7 @@
         También investigamos homicidios, estafas, hurtos, secuestros y fraudes
       </div>
 
-      <div class="personal content-section">
+      <div id="personal" class="personal content-section">
         <h1>Investigación personal</h1>
         Realizamos monitoreos de conductas (vigilancias y seguimientos)
 
@@ -193,8 +197,8 @@
         Pueden ser muchas mas las causas, pero lo que te deja tranquilo es
         conocer la verdad.
       </div>
-      <footer>
 
+      <footer>
       </footer>
     </div>
   </body>
