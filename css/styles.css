@@ -1,5 +1,6 @@
 * {
   font-family: 'Arial Rounded MT', Courier, monospace;
+  background-color: #104a6f;
 }
 
 .header { grid-area: header; }
@@ -28,25 +29,29 @@
 .grid-container > div {
   background-color: white;
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
-}
-
-.banner-image{
-  max-width: 40%;
-  max-height: 40%;
 }
 
 .content-section{
   border-radius: 5px;
+  background-color: white;
+}
+.content-section * {
+  background-color: inherit;
 }
 
-/*
-.contact-bar{
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
+/* header stuff*/
+#contact-bar{
+  margin-top: 1%;
+  margin-bottom:0%;
+}
+
+.banner-image{
+  margin-top: 0%;
+  padding-top: 0%;
+  max-width: 40%;
+  max-height: 40%;
+}
 
 /* Whatsapp Link */
 #wa-link-header:link{
@@ -71,6 +76,9 @@
 
 /* menu */
 .menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   overflow: hidden;
   background-color: #104a6f;
   font-family: 'Arial Rounded MT Bold', Courier, monospace;
@@ -99,6 +107,11 @@ ul.instituciones {
   list-style-type: none;
   padding: 0;
   margin: 5%;
+}
+
+#home{
+  margin-top:5%;
+  background-color: white;
 }
 
 .benefit{
