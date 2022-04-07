@@ -1,14 +1,15 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <title>Infidelity Tracker IP</title>
   </head>
   <body>
     <div class="menu-bar">
-      <a class="active" href="#home">Inicio</a>
-      <a href="#empresarial">Investigaciones Empresariales</a>
-      <a href="#judicial">Judicial</a>
-      <a href="#personal">Investigación Personal</a>
+      <a id="tab-home" class="active" href="#" onclick='enableSection("home"); return false;'>Inicio</a>
+      <a id="tab-empresarial" href="#" onclick='enableSection("empresarial"); return false;'>Investigaciones Empresariales</a>
+      <a id="tab-judicial" href="#" onclick='enableSection("judicial"); return false;'>Judicial</a>
+      <a id="tab-personal" href="#" onclick='enableSection("personal"); return false;'>Investigación Personal</a>
     </div>
 
     <div class="grid-container">
@@ -28,7 +29,7 @@
         <div class="end-block"></div>
       </div>
 
-      <div class="nosotros content-section">
+      <div id="nosotros" class="nosotros content-section">
         <h1>Infidelity Tracker IP</h1>
         Somos una empresa legalmente constituida bajo los estándares de
         calidad y la ley colombiana con más de 20 años de experiencia en el
@@ -218,5 +219,6 @@
       <footer>
       </footer>
     </div>
+    <script type="text/javascript" src="js/functions.js"></script>
   </body>
 </html>
